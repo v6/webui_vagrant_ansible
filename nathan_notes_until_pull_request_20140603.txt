@@ -1,0 +1,10 @@
+Helpful links: 
+
+For installing vagrant, since I got the error "It appears your machine doesn't support NFS, or there is not an
+adapter to enable NFS on this machine for Vagrant. Please verify
+that `nfsd` is installed on your machine, and try again. If you're
+on Windows, NFS isn't supported. If the problem persists, please
+contact Vagrant support."
+https://github.com/edx/edx-platform/wiki/Simplified-install-with-vagrant
+
+Noticed that this only requires >= 0 for the Virtualbox version. Should probably fix that eventually... 
