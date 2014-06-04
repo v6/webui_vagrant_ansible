@@ -1,0 +1,5 @@
+I have been at work on this for a little while, and ran into some snags with the Vagrant build. 
+
+I also installed the Yeoman build manager on my own machine. 
+
+Turns out, removing the use of nfs from the vagrant file in the git repo, installing nfs, restarting the computer, deleting the repository, and re-cloning it again allowed me to build the thing successfully. 
