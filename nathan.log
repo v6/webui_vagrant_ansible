@@ -3,3 +3,18 @@ I have been at work on this for a little while, and ran into some snags with the
 I also installed the Yeoman build manager on my own machine. 
 
 Turns out, removing the use of nfs from the vagrant file in the git repo, installing nfs, restarting the computer, deleting the repository, and re-cloning it again allowed me to build the thing successfully. 
+
+I ran the following command: 
+   "vagrant@vagrant-ubuntu-raring-64:~/src/webui$ grunt"
+
+And I received the following error: 
+   "Loading "Gruntfile.js" tasks...ERROR
+   >> Error: Cannot find module 'jit-grunt'
+   Warning: Task "default" not found. Use --force to continue.
+
+   Aborted due to warnings."
+
+I ran the following command: 
+"vagrant@vagrant-ubuntu-raring-64:~/src/webui$ npm install jit-grunt" 
+
+And I was able to start the server properly. 
