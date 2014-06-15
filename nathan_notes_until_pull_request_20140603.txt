@@ -8,3 +8,16 @@ contact Vagrant support."
 https://github.com/edx/edx-platform/wiki/Simplified-install-with-vagrant
 
 Noticed that this only requires >= 0 for the Virtualbox version. Should probably fix that eventually... 
+
+
+20140604.0 - I talked it over with johann, and he seemed to think that since the Javascript console threw an error related to requirejs for our socket.io, and since the socket.io file has changed since the last setup of vagrant, that the version might need to be updated in requirejs. 
+
+20140604.1 - I skimmed through http://code.tutsplus.com/tutorials/say-yo-to-yeoman--net-27167 for some things to play around with on our Vagrant from https://github.com/v6/webui_vagrant_ansible. 
+Does yeoman update our generators as part of our vagrant setup? 
+Also, which is "higher" in the build work hierarchy, yeoman, or our vagrant file? 
+That is to say, does yeoman control the way that vagrant operates in ways that do not depend on vagrant? 
+
+20140605.0 - Are our Maven build scripts generated code? Is there a way to tell which code is generated, and which is not? 
+If so, would it be alright for me to start putting a general overview of which code is likely to be generated, vs. which is not, into the guidelines for developers new to the source? 
+http://stackoverflow.com/questions/202871/are-code-generators-bad
+Are there any books you would recommend on the subject of generated code? 
